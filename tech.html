@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Works</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link to your own CSS file for styling -->
+    <link rel="shortcut icon" href="your-favicon.ico">
+    <style>
+      article {
+        width: 70%; /* Adjust the width as needed */
+        margin: auto auto; /* Set left and right margins to "auto" */
+        padding: 20px;
+        margin-left: 100px;
+        text-align: center; /* Optional: Center the content within the article */
+    }
+
+      /* Styles for the top navigation bar */
+      header {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 0;
+      }
+
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+          text-align: center;
+      }
+
+      nav ul li {
+          display: inline;
+          margin: 0 80px; /* Adjust margin between navigation links */
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          font-size: 20px; /* Increase font size */
+      }
+
+      /* Styles for the "About" page */
+      #about {
+          display: flex;
+          align-items: center;
+      }
+
+      #about img {
+          max-width: 300px;
+          margin-right: 20px;
+      }
+
+      .about-text {
+          display: inline-block;
+          max-width: 1200px; /* Adjust the maximum width as needed */
+          word-wrap: break-word;
+          font-size: 20px; /* Adjust the font size */
+          line-height: 1.5;
+          color: #333;
+      }
+
+      .about-text a {
+          text-decoration: underline; /* Underline links */
+          color: #0077cc; /* Link color */
+      }
+    
+      .about-text p {
+          display: inline-block;
+          max-width: 1200px; /* Adjust the maximum width as needed */
+          word-wrap: break-word;
+          font-size: 20px; /* Adjust the font size */
+          line-height: 1.5;
+          color: #333;
+      }
+
+      .social-icons {
+          display: flex;
+          align-items: center;
+      }
+
+      .social-icons a {
+          text-decoration: none;
+          color: #333;
+          font-size: 24px; /* Increase icon size */
+          margin-right: 15px; /* Adjust margin between icons */
+      }
+
+      .work-container {
+        display: flex; /* Use Flexbox */
+        margin-bottom: 20px; /* Add margin between work items */
+      }
+
+      /* CSS for Work Content (Image and Intro) */
+      .work-content {
+          display: flex; /* Use Flexbox */
+          align-items: flex-start; /* Align items at the top */
+      }
+
+      /* Fixed height for work images */
+      .work-image {
+          max-width: 100%; /* Ensure the image fits within the container */
+          height: auto; /* Maintain aspect ratio */
+          margin-right: 20px; /* Add margin to separate image and intro */
+          margin-left: 100px;
+          align-items: center;
+      }
+
+      .work-intro {
+          flex: 1; /* Allow the intro to grow and take available space */
+          margin-right: 50px;
+      }
+
+      #sidebar {
+        float: right;
+        margin-right: 200px; /* Add margin to separate sidebar from content */
+        align-items: flex-start; /* Align items at the top */
+        font-size: 24px; /* Increase icon size */
+        margin: 20px; /* Adjust the margin as needed */
+    }
+
+    #sidebar ul {
+      margin: 40px 0; /* Adjust the margin as needed */
+      list-style-type: circle; /* Remove default list styles */
+    }
+    #sidebar a {
+      display: block;
+      padding: 10px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: -100px; /* Gap between videos */
+      margin-left: 200px;
+  }
+  .video {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      width: 90%;
+
+  }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="photo.html">Photo</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-top">
+      <!-- <div class="large-3 medium-3 cell show-for-medium"> -->
+        <div id="sidebar" class="sticky">
+          <h5>Navigation:</h5>
+          <ul class="dash nav medium-shrink-text" data-magellan="x7tmzj-magellan" data-resize="b0l2oi-magellan" data-scroll="b0l2oi-magellan" id="b0l2oi-magellan">
+            <li><a href="#HIFA" class="is-active">HIFA</a></li>
+            <li><a href="#DPF">Diffusion probabilistic fields</a></li>
+            <li><a href="#corf">Controllable dynamic face synthesis</a></li>
+            <li><a href="#emixer">Multimodal X-ray Generation via self-supervision</a></li>
+            <li><a href="#amico">Amodal Instance Composition</a></li>
+            <li><a href="#latent2im">Enjoy your editing</a></li>
+            <li><a href="#fmri">FMRI data augmentation via synthesis</a></li>
+            <li><a href="#sync">Synthetic power analysis</a></li>
+            <li><a href="#graph">Conditional graph generation</a></li>
+          </ul>
+        </div>
+      <!-- </div> -->
+
+      <article id="HIFA">
+        <a href="https://hifa-team.github.io/HiFA-site/">
+        <h3>HiFA: High-fidelity Text-to-3D Generation with Advanced Diffusion Guidance (2023) </h3>
+          <!-- <div class="work-image">
+            <img src="./tech/1.png" style="max-width: 600px;">
+          </div> -->
+
+          <!-- <div class="video"> -->
+        <div class="video-grid">
+          
+          <video class="video" controls autoplay loop muted>
+            <source src="tech/1.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted>
+            <source src="tech/2.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted>
+            <source src="tech/3.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted>
+            <source src="tech/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- </div> -->
+          
+        </a>
+        <p>A high-fidelity text-to-3D generation model with pretrained text-to-image models as prior. 
+        </p>
+      </article>
+
+      <article id="DPF">
+        <a href="https://arxiv.org/abs/2303.00165">
+          <h3>Diffusion probabilistic fields (ICLR 2023) <small class="date same-line"></small> </h3>
+          <div class="work-image">
+            <img src="./tech/2.png" style="max-width: 600px; ">
+          </div>
+          
+        </a>
+        <p>A diffusion model that learns distributions over continuous functions defined over metric spaces as fields. 
+        </p>
+      </article>
+
+      <article id="corf">
+        <a href="https://arxiv.org/abs/2210.05825">
+          <h3>Controllable radiance fields for dynamic face synthesis (3DV 2022) <small class="date same-line"></small> </h3>
+          <div class="work-image">
+            <img src="./tech/corf.png" style="max-width: 600px; ">
+          </div>
+          
+        </a>
+        <p>A Controllable Radiance Field that can generate dynamic faces and human bodies with user control. 
+        </p>
+      </article>
+
+      <article id="emixer">
+        <a href="https://arxiv.org/abs/2007.05597">
+          <h3>EMIXER: End-to-end Multimodal X-ray Generation via Self-supervision (MLHC 2022) <small class="date same-line"></small> </h3>
+          <div class="work-image">
+            <img src="./tech/emixer.png" style="max-width: 600px; ">
+          </div>
+          
+        </a>
+        <p>A multi-modal X-ray generative model that is trained in a self-supervised way. 
+        </p>
+      </article>
+
+      <article id="amico">
+        <a href="https://arxiv.org/abs/2210.05828">
+          <h3>AMICO: Amodal Instance Composition (BMVC 2021) <small class="date same-line"></small> </h3>
+          <div class="work-image">
+            <img src="./tech/3.png" style="max-width: 600px; ">
+          </div>
+          
+        </a>
+        <p>An image composition model that can blend imperfect objects onto a target image. 
+        </p>
+      </article>
+
+
+      <article id="latent2im">
+        <a href="https://arxiv.org/abs/2102.01187">
+          <h3>Controllable GANs for Image Editing via Latent Space Navigation (ICLR 2021) <small class="date same-line"></small> </h3>
+          <div class="work-image">
+            <img src="./tech/4.png" style="max-width: 600px; ">
+          </div>
+          <img src="example.gif" alt="A spinning loading animation">
+
+          
+        </a>
+        <p>A latent-space image editing work using pretrained Generative Adversarial Networks (GANs). 
+        </p>
+      </article>
+
+      <article id="fmri">
+        <a href="https://arxiv.org/abs/1907.06134">
+          <h3>FMRI data augmentation via synthesis (ISBI 2019) <small class="date same-line"></small> </h3>
+          <div class="work-image">
+            <img src="./tech/5.png" style="max-width: 600px; ">
+          </div>
+          
+        </a>
+        <p>A Generative Adversarial Networks (GANs) specifically designed for fMRI brain data augmentation. 
+        </p>
+      </article>
+
+
+      <article id="sync">
+        <a href="https://arxiv.org/abs/1907.06134">
+          <h3>Synthetic Power Analyses: Empirical Evaluation and Application to Cognitive Neuroimaging (Asilomar 2019) <small class="date same-line"></small> </h3>
+          <div class="work-image">
+            <img src="./tech/sync.png" style="max-width: 600px; ">
+          </div>
+        </a>
+        <p>A methodological approach to improve statistical analysis in cognitive neuroimaging using generated datasets. 
+        </p>
+      </article>
+
+
+      <article id="graph">
+        <a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/e57c6b956a6521b28495f2886ca0977a-Paper.pdf">
+          <h3>Conditional structure generation through graph variational generative adversarial nets (NeurIPS 2019) <small class="date same-line"></small> </h3>
+          <div class="work-image">
+            <img src="./tech/graph.png" style="max-width: 600px; ">
+          </div>
+          
+        </a>
+        <p>A variational generative model specifically designed for graphs. 
+        </p>
+      </article>
+      
+    </div>
+  </div>
+        
+      <!-- Add more works as needed -->
+    <!-- </div> -->
+  </article>
+
+  <!-- Add more works as needed -->
+
+  <script>
+      // Add JavaScript if necessary
+  </script>
+</body>
+</html>
