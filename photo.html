@@ -16,39 +16,45 @@
             padding: 10px 0;
         } -->
         .toolbar {
-            display: flex;
-            background-color: #333; /* Default background color */
-            margin: 0 5px; 
-            justify-content: space-around; /* Distribute items evenly */
-            white-space: nowrap; /* Prevent text from wrapping */
-            overflow: hidden; /* Hide overflowing text */
-            text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
-        
-        }
+        display: flex;
+        background-color: #333; /* Default background color */
+        margin: 0 5px; 
+        justify-content: space-around; /* Distribute items evenly */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflowing text */
+        text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    
+    }
 
-        .toolbar a {
-            color: #fff; /* Default text color (white) */
-            text-decoration: none;
-            transition: all 0.3s; /* Smooth transition for size change */
-            border-radius: 5px; /* Rounded corners */
-            font-size: 25px; /* Set the font size to 16 pixels */
-        }
+    .toolbar a {
+        color: #fff; /* Default text color (white) */
+        text-decoration: none;
+        transition: all 0.3s; /* Smooth transition for size change */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 25px; /* Set the font size to 16 pixels */
+    }
 
-        /* Style for the link when hovered */
-        .toolbar a:hover {
-         color: rgb(163, 204, 208); /* blue color when hovered */
-          background-color: rgba(190, 221, 236, 0.187);
-          width: auto; 
-        }
+    /* Style for the link when hovered */
+    .toolbar a:hover {
+    color: rgb(163, 204, 208); /* blue color when hovered */
+      background-color: rgba(190, 221, 236, 0.187);
+      width: auto; 
+    }
 
-          /* Responsive styles for smaller screens */
-          @media (max-width: 768px) {
-            .container {
-              width: 100%;
-            }
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+          .container {
+            width: 100%;
           }
-       
-        nav ul {
+        }
+      /* Styles for the top navigation bar */
+      header {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 0;
+      }
+
+      nav ul {
             list-style-type: none;
             text-align: center;
             gap: 20%;
@@ -65,6 +71,7 @@
             font-weight: bold;
             font-size: 25px; /* Increase font size */
         }
+
         
         /* Styles for the "About" page */
         #about {
