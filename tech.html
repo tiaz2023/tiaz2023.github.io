@@ -149,7 +149,7 @@
           margin-right: 50px;
       }
 
-      #sidebar {
+    <!-- #sidebar {
         float: right;
         margin-right: 200px; /* Add margin to separate sidebar from content */
         align-items: flex-start; /* Align items at the top */
@@ -160,10 +160,36 @@
     #sidebar ul {
       margin: 40px 0; /* Adjust the margin as needed */
       list-style-type: circle; /* Remove default list styles */
-    }
-    #sidebar a {
+    } -->
+
+    .sidebar a {
       display: block;
       padding: 10px;
+    }
+
+    .sidebar h2 {
+      color: rgb(138, 164, 182); /* Default color for h2 elements in the sidebar */
+  }
+    .sidebar ul {
+      margin: 40px 0; /* Adjust the margin as needed */
+      list-style-type: circle; /* Remove default list styles */
+    }
+    .sidebar {
+        float: right;
+        position: sticky;
+        top: 0; /* Stick to the top of the viewport */
+        margin: 20px; /* Adjust the margin as needed */
+        font-size: 24px; /* Increase icon size */
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px;
+    } 
+    .content {
+        flex-grow: 1;
+        padding: 20px; /* Add padding to separate content from sidebar */
+        /* Add your content styling here */
     }
 
     .video-grid {
@@ -206,8 +232,9 @@
   <div class="grid-container">
     <div class="grid-x grid-margin-x align-top">
       <!-- <div class="large-3 medium-3 cell show-for-medium"> -->
-        <div id="sidebar" class="sticky">
-          <h5>Navigation:</h5>
+        <!-- <div id="sidebar" class="sticky"> -->
+          <div class="sidebar">
+          <h2>Navigation:</h2>
           <ul class="dash nav medium-shrink-text" data-magellan="x7tmzj-magellan" data-resize="b0l2oi-magellan" data-scroll="b0l2oi-magellan" id="b0l2oi-magellan">
             <li><a href="#HIFA" class="is-active">HIFA</a></li>
             <li><a href="#DPF">Diffusion probabilistic fields</a></li>
