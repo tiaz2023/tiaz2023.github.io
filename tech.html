@@ -39,7 +39,7 @@
         white-space: nowrap; /* Prevent text from wrapping */
         overflow: hidden; /* Hide overflowing text */
         text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
-    
+        text-align: center;
     }
 
     .toolbar a {
@@ -56,6 +56,18 @@
       background-color: rgba(190, 221, 236, 0.187);
       width: auto; 
     }
+
+      /* Responsive styles for smaller screens */
+      @media (max-width: 768px) {
+        .toolbar {
+            flex-direction: column; /* Stack links vertically */
+            align-items: center; /* Center links horizontally */
+        }
+
+        .toolbar a {
+            margin: 5px 0; /* Add space between links */
+        }
+      }
 
         /* Responsive styles for smaller screens */
         @media (max-width: 768px) {
