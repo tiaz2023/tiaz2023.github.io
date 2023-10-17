@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Works</title>
+    <title>Tach</title>
     <link rel="stylesheet" href="styles.css"> <!-- You can link to your own CSS file for styling -->
     <link rel="shortcut icon" href="your-favicon.ico">
     <style>
@@ -26,12 +26,34 @@
       }
 
       article {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
         width: 70%; /* Adjust the width as needed */
-        margin: auto auto; /* Set left and right margins to "auto" */
+        margin: 0 auto; /* Set left and right margins to "auto" */
         padding: 20px;
-        margin-left: 100px;
         text-align: center; /* Optional: Center the content within the article */
     }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      margin-left: 10%; 
+  }
+  .video {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      width: 90%;
+  }
+    
+  .h3 {
+    color: #6d757b; /* description color */
+  }
+  
+
+  .sidebar h2 {
+    color: rgb(138, 164, 182); /* Default color for h2 elements in the sidebar */
+}
       .toolbar {
         display: flex;
         background-color: #333; /* Default background color */
@@ -238,6 +260,7 @@
       display: block;
       padding: 10px;
     } 
+    
     @media screen and (max-width: 1200px) {
       .sidebar {
           display: none; /* This hides the sidebar */
@@ -248,21 +271,8 @@
         /* Add your content styling here */
     }
 
-    .h3 {
-      color: #586066; /* description color */
-  }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 columns */
-      margin-left: 10%; 
-  }
-  .video {
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      width: 90%;
-
-  }
+    
+   
   
   </style>
 </head>
