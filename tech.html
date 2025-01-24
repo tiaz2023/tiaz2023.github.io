@@ -43,6 +43,12 @@
       justify-content: center; /* Center horizontally */
       align-items: center; /* Center vertically */
       width: 90%;
+      margin-left: 10%; 
+  }
+  .video-grid4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 2 columns */
+      margin-left: 10%; 
   }
   .h3 {
     color: rgb(58, 96, 122); /* Default color for h2 elements in the sidebar */
@@ -301,6 +307,12 @@
           <div class="sidebar">
           <h2>Navigation:</h2>
           <ul class="dash nav medium-shrink-text" data-magellan="x7tmzj-magellan" data-resize="b0l2oi-magellan" data-scroll="b0l2oi-magellan" id="b0l2oi-magellan">
+            <li><a href="#prediter">PrEditer3D</a></li>
+            <li><a href="#4Realvideo">4Real-Video</a></li>
+            <li><a href="#GTR">GTR</a></li>
+            <li><a href="#DELTA">DELTA</a></li>
+            <li><a href="#4Real">4Real</a></li>
+            <li><a href="#SceneWiz3D">SceneWiz3D</a></li>
             <li><a href="#HIFA">HIFA</a></li>
             <li><a href="#DPF">DPF</a></li>
             <li><a href="#corf">CORF</a></li>
@@ -316,7 +328,102 @@
 
       <article class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
-            
+        
+        <article id="prediter">
+        <a href="https://ziyaerkoc.com/preditor3d/" style="color: rgb(119, 132, 142); text-decoration: none;">
+          <h3 >PrEditor3D: Fast and Precise 3D Shape Editing (arxiv) <small class="date same-line"></small> </h3>
+          <div class="video-grid4">
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/prediter3di.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/prediter3d.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/c1.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/c2.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/c3.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/c4.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/truck_input.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/truck_output.mp4" type="video/mp4">
+        </div>
+        </a>
+        <h3 class="h3"> A feed-forward 3D local editing tool that can edit a 3D mesh within 2 minutes.
+        </h3>
+      </article>  
+
+      <article id="4Realvideo">
+        <a href="https://snap-research.github.io/4Real-Video/" style="color: rgb(119, 132, 142); text-decoration: none;">
+          <h3 >4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion (arxiv) <small class="date same-line"></small> </h3>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/4real-video1.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/4real-video.mp4" type="video/mp4">
+          </video>
+        </a>
+        <h3 class="h3"> A large-scale video diffusion model that can generate 4D video grids in a feed-forward manner.
+        </h3>
+      </article>  
+        <article id="GTR">
+        <a href="https://snap-research.github.io/GTR/" style="color: rgb(119, 132, 142); text-decoration: none;">
+          <h3 >GTR: Improving Large 3D Re- construction Models through Geometry and Texture Refinemen (ICLR 2025) <small class="date same-line"></small> </h3>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/gtr.mp4" type="video/mp4">
+          </video>
+        </a>
+        <h3 class="h3"> A large-scale multi-view images to 3D mesh reconsutrction for objects.
+        </h3>
+      </article>  
+      <article id="DELTA">
+        <a href="https://snap-research.github.io/DELTA/" style="color: rgb(119, 132, 142); text-decoration: none;">
+          <h3 >DELTA: Dense Efficient Long-range 3D Tracking for any video (ICLR 2025) <small class="date same-line"></small> </h3>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/delta2.mp4" type="video/mp4">
+          </video>
+        </a>
+        <h3 class="h3"> Dense (per-pixel) 3D trakcking from monocular videos.
+        </h3>
+      </article>
+
+        <article id="4Real">
+        <a href="https://snap-research.github.io/4Real/" style="color: rgb(119, 132, 142); text-decoration: none;">
+          <h3 >4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models (NeurIPS 2024) <small class="date same-line"></small> </h3>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/4real.mp4" type="video/mp4">
+          </video>
+        </a>
+        <h3 class="h3"> The first photorealistic text-to-4D scene generation pipeline, with the use of video diffusion models. 
+        </h3>
+      </article>
+
+      <article id="SceneWiz3D">
+        <a href="https://zqh0253.github.io/SceneWiz3D/" style="color: rgb(119, 132, 142); text-decoration: none;">
+          <h3 >SceneWiz3D: Towards Text-guided 3D Scene Composition (CVPR 2024) <small class="date same-line"></small> </h3>
+          <div class="video-grid">
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/scenewiz3D.mp4" type="video/mp4">
+          </video>
+          <video class="video" controls autoplay loop muted style="max-width: 100%">
+            <source src="tech/scenewiz3D2.mp4" type="video/mp4">
+          </video>
+        </div>
+          
+        </a>
+        <h3 class="h3">High-fidelity 3D scene generation from text. 
+        </h3>
+      </article>
+
       <article id="HIFA">
         <a href="https://hifa-team.github.io/HiFA-site/" style="color: rgb(119, 132, 142); text-decoration: none;">
         <h3>HiFA: High-fidelity Text-to-3D Generation with Advanced Diffusion Guidance (ICLR 2024) </h3>
