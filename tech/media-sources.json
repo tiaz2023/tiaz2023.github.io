@@ -1,0 +1,21 @@
+{
+  "roblox-reality-demo.mp4": {
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7505107361364078592/",
+    "edit": "58\u201398 seconds; audio removed; no spatial crop",
+    "poster": "Frame at 90 seconds in original"
+  },
+  "cubepart-demo.mp4": {
+    "source": "https://cubepart.github.io/static/videos/summary.mp4"
+  },
+  "t2bs-demo.mp4": {
+    "source": "https://snap-research.github.io/T2Bs/files/video/retargeting.mp4"
+  },
+  "uniphy-demo.mp4": {
+    "source": "https://himangim.github.io/UniPhy/grid_animation3.gif",
+    "edit": "GIF converted to H.264 MP4"
+  },
+  "official-announcement": {
+    "source": "https://www.youtube-nocookie.com/embed/A60n4O5k8XI",
+    "context": "April 2026 lab output and product vision; separate from RDC demo"
+  }
+}
