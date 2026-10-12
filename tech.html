@@ -281,6 +281,58 @@
    
   
   </style>
+
+<style>
+#roblox-reality { display:block; box-sizing:border-box; background:#edf3ef; border:1px solid #d5e2d9; border-radius:8px; padding:30px; margin-top:30px; margin-bottom:36px; text-align:left; color:#222b2e; }
+#roblox-reality .reality-label { font:650 11px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing:.16em; text-transform:uppercase; color:#356f6b; margin:0 0 16px; }
+#roblox-reality h2 { font:400 38px/1.2 Georgia,serif; margin:0 0 20px; }
+#roblox-reality .reality-subtitle { font:20px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; margin:0 0 18px; }
+#roblox-reality .reality-description { font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:#50625d; margin:0 0 20px; }
+#roblox-reality .reality-links { display:flex; flex-wrap:wrap; gap:12px 22px; margin-bottom:24px; font:600 13px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+#roblox-reality .reality-links a {color:#356f6b; text-decoration:none;}
+#roblox-reality .reality-links a:hover {text-decoration:underline;}
+#roblox-reality video { display:block; width:100%; margin:0; border-radius:4px; }
+#roblox-reality .reality-caption { font:12px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:#657377; margin:12px 0 0; }
+@media(max-width:600px) { #roblox-reality {padding:18px;} #roblox-reality h2 {font-size:30px;} #roblox-reality .reality-subtitle {font-size:17px;} }
+</style>
+<style>
+/* Work cards: retain the shared site navigation and style each project consistently. */
+article.grid-container { width:calc(100% - 320px); max-width:1100px; margin:28px 300px 48px 20px; display:block; }
+.grid-container > .grid-x {width:100%;}
+.grid-container article[id] {box-sizing:border-box; display:block; width:100%; background:#edf3ef; border:1px solid #d5e2d9; border-radius:10px; margin:0 0 28px; padding:28px 32px; text-align:left; overflow:hidden; }
+.grid-container article[id] > a {display:block;}
+.grid-container article[id] h3:not(.h3) {font:400 27px/1.3 Georgia,serif; color:#283c37; margin:0 0 20px;}
+.grid-container article[id] h3.h3 {font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:#50625d; margin:20px 0 0;}
+.grid-container article[id] .video {width:100%; margin:12px 0; border-radius:5px;}
+.grid-container article[id] .video-grid,.grid-container article[id] .video-grid4 {margin:0; gap:12px; align-items:center;}
+.grid-container article[id] .video-grid .video,.grid-container article[id] .video-grid4 .video {margin:0;}
+.grid-container article[id] .work-image {text-align:center; background:rgba(255,255,255,.65); border-radius:5px; padding:16px;}
+.grid-container article[id] .work-image img {max-width:100%!important; max-height:440px; object-fit:contain;}
+.grid-container #roblox-reality {margin-top:0;}
+.sidebar {width:240px; font-size:16px; max-height:calc(100vh - 40px); overflow:auto; margin:20px;}
+.sidebar h2 {font-size:21px;}.sidebar ul {margin:16px 0;padding-left:20px;}.sidebar a {padding:6px;}
+@media(max-width:1200px){article.grid-container {width:90%;margin:28px auto 48px;}}
+@media(max-width:600px){article.grid-container {width:94%;margin:18px auto;}.grid-container article[id]{padding:20px 18px;margin-bottom:20px;}.grid-container article[id] h3:not(.h3){font-size:23px;}.grid-container article[id] .video-grid4{grid-template-columns:repeat(2,minmax(0,1fr));}}
+</style>
+<style>
+/* Center content within all work cards. */
+.grid-container article[id] { text-align:center; }
+.grid-container article[id] .video,
+.grid-container article[id] video { margin-left:auto; margin-right:auto; }
+#roblox-reality .reality-links { justify-content:center; }
+</style>
+<style>
+/* Center cards between the viewport left edge and the navigation rail at right:20px, width:220px. */
+article.grid-container { width:calc(100vw - 304px); max-width:1100px; margin:28px 0 48px; margin-left:max(24px, calc((100vw - 240px - 1100px) / 2 - 8px)); }
+.sidebar { float:none; position:fixed; top:100px; right:20px; width:220px; margin:0; max-height:calc(100vh - 120px); }
+@media(max-width:1200px) { article.grid-container {width:90%;margin:28px auto 48px;} }
+@media(max-width:600px) { article.grid-container {width:94%;margin:18px auto;} }
+</style>
+<style>
+.research-intro { text-align:left; padding:12px 0 30px; color:#283c37; }
+.research-intro p { font-size:28px; font-weight:bold; line-height:1.5; margin:0 0 10px; }
+@media(max-width:600px) { .research-intro {padding:8px 0 22px;} .research-intro p {font-size:22px;} }
+</style>
 </head>
 <body>
   <!-- <header>
@@ -306,32 +358,77 @@
         <!-- <div id="sidebar" class="sticky"> -->
           <div class="sidebar">
           <h2>Navigation:</h2>
-          <ul class="dash nav medium-shrink-text" data-magellan="x7tmzj-magellan" data-resize="b0l2oi-magellan" data-scroll="b0l2oi-magellan" id="b0l2oi-magellan">
-            <li><a href="#prediter">PrEditer3D</a></li>
-            <li><a href="#4Realvideo">4Real-Video</a></li>
-            <li><a href="#GTR">GTR</a></li>
-            <li><a href="#DELTA">DELTA</a></li>
-            <li><a href="#4Real">4Real</a></li>
-            <li><a href="#SceneWiz3D">SceneWiz3D</a></li>
-            <li><a href="#HIFA">HIFA</a></li>
-            <li><a href="#DPF">DPF</a></li>
-            <li><a href="#corf">CORF</a></li>
-            <li><a href="#emixer">EMIXER</a></li>
-            <li><a href="#amico">AMICO</a></li>
-            <li><a href="#latent2im">Enjoy your editing</a></li>
-            <li><a href="#fmri">FMRI synthesis</a></li>
-            <li><a href="#sync">Synthetic power</a></li>
-            <li><a href="#graph">Graph generation</a></li>
-          </ul>
+          <ul class="dash nav medium-shrink-text" data-magellan="x7tmzj-magellan" data-resize="b0l2oi-magellan" data-scroll="b0l2oi-magellan" id="b0l2oi-magellan"><li><a href="#roblox-reality">Roblox Reality</a></li>
+<li><a href="#coarse2real">Coarse2Real</a></li>
+<li><a href="#cubepart">CubePart</a></li>
+<li><a href="#t2bs">T2Bs</a></li>
+<li><a href="#uniphy">UniPhy</a></li>
+<li><a href="#prediter">PrEditor3D</a></li>
+<li><a href="#4Realvideo">4Real-Video</a></li>
+<li><a href="#GTR">GTR</a></li>
+<li><a href="#DELTA">DELTA</a></li>
+<li><a href="#cube">Cube</a></li>
+<li><a href="#4Real">4Real</a></li>
+<li><a href="#SceneWiz3D">SceneWiz3D</a></li>
+<li><a href="#HIFA">HiFA</a></li>
+<li><a href="#atom">AToM</a></li>
+<li><a href="#dynamic-views">Dynamic view synthesis</a></li>
+<li><a href="#DPF">DPF</a></li>
+<li><a href="#corf">CORF</a></li>
+<li><a href="#emixer">EMIXER</a></li>
+<li><a href="#amico">AMICO</a></li>
+<li><a href="#latent2im">Enjoy your editing</a></li>
+<li><a href="#fmri">FMRI synthesis</a></li>
+<li><a href="#sync">Synthetic power</a></li>
+<li><a href="#graph">Graph generation</a></li></ul>
         </div>
       <!-- </div> -->
 
       <article class="grid-container">
+        <div class="research-intro">
+          <p>3D &amp; 4D Generation · Video Models · Interactive Worlds</p>
+          <p>Agentic Creation for 3D, 4D &amp; Games (cooking 🔧)</p>
+        </div>
+
         <div class="grid-x grid-margin-x align-justify">
         
-        <article id="prediter">
+        <article id="roblox-reality">
+<p class="reality-label">Featured project · Roblox · 2026</p>
+<h2>Roblox Reality</h2>
+<p class="reality-subtitle">Video models as an AI renderer for interactive 3D worlds.</p>
+<p class="reality-description">The game engine provides world structure and game logic; a video model transforms its output into richer visuals. Creator control guides the appearance, style, and freedom of the generative renderer.</p>
+<div class="reality-links"><a href="https://about.roblox.com/newsroom/2026/04/roblox-reality-hybrid-architecture-democratizing-photorealistic-multiplayer-gaming">Official announcement ↗</a><a href="https://www.linkedin.com/feed/update/urn:li:activity:7505107361364078592/">RDC demo &amp; project update ↗</a></div>
+<video controls autoplay loop muted playsinline preload="none" poster="tech/roblox-reality-poster.jpg"><source src="tech/roblox-reality-demo.mp4" type="video/mp4"></video>
+
+</article>
+
+<article id="coarse2real">
+<a href="https://gonzalognogales.github.io/coarse2real/" style="color: rgb(119, 132, 142); text-decoration: none;"><h3>C2R: Coarse-to-Real (NeurIPS 2026)</h3></a>
+<video class="video" controls autoplay loop muted playsinline preload="none" poster="tech/coarse2real-demo.jpg"><source src="tech/coarse2real-demo.mp4" type="video/mp4"></video>
+<h3 class="h3">Generating realistic urban crowd videos from coarse 3D simulations, with control over scene layout, camera motion, human trajectories, and appearance.</h3>
+</article>
+
+<article id="cubepart">
+<a href="https://cubepart.github.io/" style="color: rgb(119, 132, 142); text-decoration: none;"><h3>CubePart: An Open-Vocabulary Part-Controllable 3D Generator (SIGGRAPH 2026)</h3></a>
+<video class="video" controls autoplay loop muted playsinline preload="none" poster="tech/cubepart-demo.jpg" style="max-width: 100%"><source src="tech/cubepart-demo.mp4" type="video/mp4"></video>
+<h3 class="h3">Generate coherent 3D assets with user-specified semantic parts, ready for animation and scripted behaviors.</h3>
+</article>
+
+<article id="t2bs">
+<a href="https://snap-research.github.io/T2Bs/" style="color: rgb(119, 132, 142); text-decoration: none;"><h3>T2Bs: Text-to-Character Blendshapes via Video Generation (ICCV 2025)</h3></a>
+<video class="video" controls autoplay loop muted playsinline preload="none" poster="tech/t2bs-demo.jpg" style="max-width: 100%"><source src="tech/t2bs-demo.mp4" type="video/mp4"></video>
+<h3 class="h3">Turning text into expressive, animatable 3D character heads by combining 3D generation with video diffusion.</h3>
+</article>
+
+<article id="uniphy">
+<a href="https://himangim.github.io/UniPhy/" style="color: rgb(119, 132, 142); text-decoration: none;"><h3>UniPhy: Learning a Unified Constitutive Model for Inverse Physics Simulation (CVPR 2025)</h3></a>
+<video class="video" controls autoplay loop muted playsinline preload="none" poster="tech/uniphy-demo.jpg" style="max-width: 100%"><source src="tech/uniphy-demo.mp4" type="video/mp4"></video>
+<h3 class="h3">Infer material properties from observed motion, then re-simulate objects under new conditions with a shared neural material model.</h3>
+</article>
+
+<article id="prediter">
         <a href="https://ziyaerkoc.com/preditor3d/" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3 >PrEditor3D: Fast and Precise 3D Shape Editing (arxiv) <small class="date same-line"></small> </h3>
+          <h3>PrEditor3D: Fast and Precise 3D Shape Editing (CVPR 2025)</h3>
           <div class="video-grid4">
           <video class="video" controls autoplay loop muted style="max-width: 100%">
             <source src="tech/prediter3di.mp4" type="video/mp4">
@@ -356,15 +453,15 @@
           </video>
           <video class="video" controls autoplay loop muted style="max-width: 100%">
             <source src="tech/truck_output.mp4" type="video/mp4">
+</video>
         </div>
         </a>
-        <h3 class="h3"> A feed-forward 3D local editing tool that can edit a 3D mesh within 2 minutes.
-        </h3>
-      </article>  
+        <h3 class="h3">Fast, localized 3D mesh editing from text and rough masks, while preserving regions outside the edit.</h3>
+      </article>
 
-      <article id="4Realvideo">
+<article id="4Realvideo">
         <a href="https://snap-research.github.io/4Real-Video/" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3 >4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion (arxiv) <small class="date same-line"></small> </h3>
+          <h3>4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion (CVPR 2025)</h3>
           <video class="video" controls autoplay loop muted style="max-width: 100%">
             <source src="tech/4real-video1.mp4" type="video/mp4">
           </video>
@@ -372,44 +469,48 @@
             <source src="tech/4real-video.mp4" type="video/mp4">
           </video>
         </a>
-        <h3 class="h3"> A large-scale video diffusion model that can generate 4D video grids in a feed-forward manner.
-        </h3>
-      </article>  
-        <article id="GTR">
+        <h3 class="h3">A large-scale video diffusion model that can generate 4D video grids in a feed-forward manner.</h3>
+      </article>
+
+<article id="GTR">
         <a href="https://snap-research.github.io/GTR/" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3 >GTR: Improving Large 3D Re- construction Models through Geometry and Texture Refinemen (ICLR 2025) <small class="date same-line"></small> </h3>
+          <h3>GTR: Improving Large 3D Reconstruction Models through Geometry and Texture Refinement (ICLR 2025)</h3>
           <video class="video" controls autoplay loop muted style="max-width: 100%">
             <source src="tech/gtr.mp4" type="video/mp4">
           </video>
         </a>
-        <h3 class="h3"> A large-scale multi-view images to 3D mesh reconsutrction for objects.
-        </h3>
-      </article>  
-      <article id="DELTA">
+        <h3 class="h3">Reconstructing detailed 3D meshes from multi-view images with improved geometry and texture.</h3>
+      </article>
+
+<article id="DELTA">
         <a href="https://snap-research.github.io/DELTA/" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3 >DELTA: Dense Efficient Long-range 3D Tracking for any video (ICLR 2025) <small class="date same-line"></small> </h3>
+          <h3>DELTA: Dense Efficient Long-range 3D Tracking for any video (ICLR 2025)</h3>
           <video class="video" controls autoplay loop muted style="max-width: 100%">
             <source src="tech/delta2.mp4" type="video/mp4">
           </video>
         </a>
-        <h3 class="h3"> Dense (per-pixel) 3D trakcking from monocular videos.
-        </h3>
+        <h3 class="h3">Dense, per-pixel 3D tracking from monocular videos.</h3>
       </article>
 
-        <article id="4Real">
+<article id="cube">
+<a href="https://arxiv.org/abs/2503.15475" style="color: rgb(119, 132, 142); text-decoration: none;"><h3>Cube: A Roblox View of 3D Intelligence (Technical report · 2025)</h3></a>
+
+<h3 class="h3">A foundation-model approach to 3D intelligence, connecting shape generation, scene understanding, and reasoning.</h3>
+</article>
+
+<article id="4Real">
         <a href="https://snap-research.github.io/4Real/" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3 >4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models (NeurIPS 2024) <small class="date same-line"></small> </h3>
+          <h3>4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models (NeurIPS 2024)</h3>
           <video class="video" controls autoplay loop muted style="max-width: 100%">
             <source src="tech/4real.mp4" type="video/mp4">
           </video>
         </a>
-        <h3 class="h3"> The first photorealistic text-to-4D scene generation pipeline, with the use of video diffusion models. 
-        </h3>
+        <h3 class="h3">The first photorealistic text-to-4D scene generation pipeline, with the use of video diffusion models.</h3>
       </article>
 
-      <article id="SceneWiz3D">
+<article id="SceneWiz3D">
         <a href="https://zqh0253.github.io/SceneWiz3D/" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3 >SceneWiz3D: Towards Text-guided 3D Scene Composition (CVPR 2024) <small class="date same-line"></small> </h3>
+          <h3>SceneWiz3D: Towards Text-guided 3D Scene Composition (CVPR 2024)</h3>
           <div class="video-grid">
           <video class="video" controls autoplay loop muted style="max-width: 100%">
             <source src="tech/scenewiz3D.mp4" type="video/mp4">
@@ -420,13 +521,12 @@
         </div>
           
         </a>
-        <h3 class="h3">High-fidelity 3D scene generation from text. 
-        </h3>
+        <h3 class="h3">High-fidelity 3D scene generation from text.</h3>
       </article>
 
-      <article id="HIFA">
+<article id="HIFA">
         <a href="https://hifa-team.github.io/HiFA-site/" style="color: rgb(119, 132, 142); text-decoration: none;">
-        <h3>HiFA: High-fidelity Text-to-3D Generation with Advanced Diffusion Guidance (ICLR 2024) </h3>
+        <h3>HiFA: High-fidelity Text-to-3D Generation with Advanced Diffusion Guidance (ICLR 2024)</h3>
           <!-- <div class="work-image">
             <img src="./tech/1.png" style="max-width: 600px;">
           </div> -->
@@ -450,106 +550,107 @@
         <!-- </div> -->
           
         </a>
-        <h3 class="h3">A high-fidelity text-to-3D generation model with pretrained text-to-image models as prior. 
-        </h3>
+        <h3 class="h3">A high-fidelity text-to-3D generation model with pretrained text-to-image models as prior.</h3>
       </article>
 
-      <article id="DPF">
-        <a href="https://arxiv.org/abs/2303.00165" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3 >Diffusion probabilistic fields (ICLR 2023) <small class="date same-line"></small> </h3>
+<article id="atom">
+<a href="https://snap-research.github.io/AToM/" style="color: rgb(119, 132, 142); text-decoration: none;"><h3>AToM: Amortized Text-to-Mesh using 2D Diffusion (Preprint · 2024)</h3></a>
+
+<h3 class="h3">Feed-forward generation of textured meshes from text, using amortized optimization with 2D diffusion priors.</h3>
+</article>
+
+<article id="dynamic-views">
+<a href="https://arxiv.org/abs/2401.05583" style="color: rgb(119, 132, 142); text-decoration: none;"><h3>Diffusion Priors for Dynamic View Synthesis from Monocular Videos (Preprint · 2024)</h3></a>
+
+<h3 class="h3">Reconstructing dynamic scenes and synthesizing unseen views from a single video using RGB-D diffusion priors.</h3>
+</article>
+
+<article id="DPF">
+        <a href="https://machinelearning.apple.com/research/diffusion-probabilistic-fields" style="color: rgb(119, 132, 142); text-decoration: none;">
+          <h3>Diffusion Probabilistic Fields (ICLR 2023)</h3>
           <div class="work-image">
             <img src="./tech/2.png" style="max-width: 70%">
           </div>
           
         </a>
-        <h3 class="h3">A diffusion model that learns distributions over continuous functions defined over metric spaces as fields. 
-        </h3>
+        <h3 class="h3">A diffusion model that learns distributions over continuous functions defined over metric spaces as fields.</h3>
       </article>
 
-      <article id="corf">
+<article id="corf">
         <a href="https://arxiv.org/abs/2210.05825" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3>Controllable radiance fields for dynamic face synthesis (3DV 2022) <small class="date same-line"></small> </h3>
+          <h3>Controllable radiance fields for dynamic face synthesis (3DV 2022)</h3>
           <div class="work-image">
             <img src="./tech/corf.png" style="max-width: 70%">
           </div>
           
         </a>
-        <h3 class="h3">A Controllable Radiance Field that can generate dynamic faces and human bodies with user control. 
-        </h3>
+        <h3 class="h3">A Controllable Radiance Field that can generate dynamic faces and human bodies with user control.</h3>
       </article>
 
-      <article id="emixer">
+<article id="emixer">
         <a href="https://arxiv.org/abs/2007.05597" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3>EMIXER: End-to-end Multimodal X-ray Generation via Self-supervision (MLHC 2022) <small class="date same-line"></small> </h3>
+          <h3>EMIXER: End-to-end Multimodal X-ray Generation via Self-supervision (MLHC 2022)</h3>
           <div class="work-image">
             <img src="./tech/emixer.png" style="max-width: 70%">
           </div>
           
         </a>
-        <h3 class="h3">A multi-modal X-ray generative model that is trained in a self-supervised way. 
-        </h3>
+        <h3 class="h3">A multi-modal X-ray generative model that is trained in a self-supervised way.</h3>
       </article>
 
-      <article id="amico">
+<article id="amico">
         <a href="https://arxiv.org/abs/2210.05828" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3>AMICO: Amodal Instance Composition (BMVC 2021) <small class="date same-line"></small> </h3>
+          <h3>AMICO: Amodal Instance Composition (BMVC 2021)</h3>
           <div class="work-image">
             <img src="./tech/3.png" style="max-width: 70%">
           </div>
           
         </a>
-        <h3 class="h3">An image composition model that can blend imperfect objects onto a target image. 
-        </h3>
+        <h3 class="h3">An image composition model that can blend imperfect objects onto a target image.</h3>
       </article>
 
-
-      <article id="latent2im">
+<article id="latent2im">
         <a href="https://arxiv.org/abs/2102.01187" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3>Controllable GANs for Image Editing via Latent Space Navigation (ICLR 2021) <small class="date same-line"></small> </h3>
+          <h3>Enjoy Your Editing: Controllable GANs for Image Editing via Latent Space Navigation (ICLR 2021)</h3>
           <div class="work-image">
             <img src="./tech/4.png" style="max-width: 70%">
           </div>
 
           
         </a>
-        <h3 class="h3">A latent-space image editing work using pretrained Generative Adversarial Networks (GANs). 
-        </h3>
+        <h3 class="h3">A latent-space image editing work using pretrained Generative Adversarial Networks (GANs).</h3>
       </article>
 
-      <article id="fmri">
+<article id="fmri">
         <a href="https://arxiv.org/abs/1907.06134" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3>FMRI data augmentation via synthesis (ISBI 2019) <small class="date same-line"></small> </h3>
+          <h3>FMRI data augmentation via synthesis (ISBI 2019)</h3>
           <div class="work-image">
             <img src="./tech/5.png" style="max-width: 70%">
           </div>
           
         </a>
-        <h3 class="h3">A Generative Adversarial Networks (GANs) specifically designed for fMRI brain data augmentation. 
-        </h3>
+        <h3 class="h3">Synthesizing fMRI brain data with generative adversarial networks for data augmentation.</h3>
       </article>
 
-
-      <article id="sync">
-        <a href="https://arxiv.org/abs/1907.06134" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3>Synthetic Power Analyses: Empirical Evaluation and Application to Cognitive Neuroimaging (Asilomar 2019) <small class="date same-line"></small> </h3>
+<article id="sync">
+        <a href="https://arxiv.org/abs/2210.05835" style="color: rgb(119, 132, 142); text-decoration: none;">
+          <h3>Synthetic Power Analyses: Empirical Evaluation and Application to Cognitive Neuroimaging (Asilomar 2019)</h3>
           <div class="work-image">
             <img src="./tech/sync.png" style="max-width: 70%">
+</div>
         </a>
-        <h3 class="h3">A methodological approach to improve statistical analysis in cognitive neuroimaging using generated datasets. 
-        </h3>
+        <h3 class="h3">A methodological approach to improve statistical analysis in cognitive neuroimaging using generated datasets.</h3>
       </article>
 
-
-      <article id="graph">
+<article id="graph">
         <a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/e57c6b956a6521b28495f2886ca0977a-Paper.pdf" style="color: rgb(119, 132, 142); text-decoration: none;">
-          <h3>Conditional structure generation through graph variational generative adversarial nets (NeurIPS 2019) <small class="date same-line"></small> </h3>
+          <h3>Conditional structure generation through graph variational generative adversarial nets (NeurIPS 2019)</h3>
           <div class="work-image">
             <img src="./tech/graph.png" style="max-width: 70%">
           </div>
           
         </a>
-        <h3 class="h3">A variational generative model specifically designed for graphs. 
-        </h3>
+        <h3 class="h3">A variational generative model specifically designed for graphs.</h3>
       </article>
       
     </div>

@@ -182,11 +182,10 @@
         }
         
         #gallery-image {
+            display: block;
             width: 100%;
-            height: 100%;
-            width: auto;
             height: auto;
-            object-fit: cover;
+            object-fit: contain;
         }
 
 
@@ -238,7 +237,7 @@
     </nav>
 
     <div id="photo-container" >
-        <img id="gallery-image" src="photo/1.jpg" alt="Photo">
+        <img id="gallery-image" src="photo/autumn-forest.jpeg" alt="Photo">
         <div id="navigation-buttons">
             <button onclick="previous_photo();" id="previous" aria-label="Previous Photo">&#9664;</button>
             <button onclick="next_photo();" id="next" aria-label="Next Photo">&#9654;</button>
@@ -249,6 +248,12 @@
     <script>
         // Define an array of image filenames
         const imageFilenames = [
+            'autumn-forest.jpeg',
+            'mountain-river.jpeg',
+            'deer-at-sunset.jpeg',
+            'coastal-light.jpeg',
+            'palm-trees.jpeg',
+
             '13.jpg',
             '14.jpg',
             '12.jpg',
@@ -271,7 +276,7 @@
 
         // Function to display the current image
         function displayCurrentImage() {
-            galleryImage.src = 'photo/' + imageFilenames[currentImageIndex];
+            galleryImage.src = 'photo/' + imageFilenames[currentImageIndex] + '?v=3';
         }
 
         // Function to navigate to the previous image
